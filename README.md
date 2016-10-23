@@ -1,11 +1,9 @@
 #Introduction to the command line#
-Class materials for introduction to the command line
 
-In the beginning there was the command line - Neal Stephenson
+You have read in files, wrangled data and plotted some graphs in Rstudio but now we're going to teach you how you can leave the Rstudio environment and learn a bit about running scripts in your operating system. 
 
-The command line interface or interpreter allows the user to access, navigate and modify files and folders on the computer without the use of a mouse. 
+To do this, we're going to introduce you to the command line and show you how to access, navigate and modify files and folders without using a mouse. 
 
-Up until now you have learned how to read in files, clean and analyse data sets in R studio but now we're going to step out of the 
 The advantage of using the command line is its power. You can run programs, write scripts to automate common tasks, and combine simple commands to handle difficult tasks - making it an important programming tool.
 
 ##What is the command line?##
