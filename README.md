@@ -52,6 +52,23 @@ But are we in the correct place? Check with the pwd command
 
 If we want to move back one folder we can do so easily using `cd ..`
 
+Ok so maybe we want to move some of our files into a new directory. Let's make that new directory first
+
+*`mkdir` - make directory. This command makes a new directory in the filesystem at the location you have navigated to
+
+Let's create a new directory and call it command_line:
+
+`mkdir command_line`
+
+What command will tell us if that worked?
+
+'ls' will let us know if we successfully created a new directory. 
+
+So let's move into that directory.
+
+##Moving forward##
+
+* `touch` - creates a new text file 
 
 
 
