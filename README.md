@@ -25,7 +25,14 @@ In OSX or Linux we're going to need to install iterm, which is just a nice termi
 
 Ok first thing's first. Open up your terminal and take a look. There should be some text at the top of the terminal saying something like this:
 
-Last login: Fri Oct 21 13:32:59 on ttys005
-Karries-MacBook:~ karrie$
+`Last login: Fri Oct 21 13:32:59 on ttys005
+Karries-MacBook:~ karrie$`
+
+Now we have this black box staring at us, blinking at us and so opens up a world of opportunity and possibilities. 
+
+Well we are now speaking to the operating system but we need to know where we are on that system. 
+
+To do that we are going to use the following command:
+* `pwd` - stands for print working directory. This will tell us where we are within your file system
 
 ##
