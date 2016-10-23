@@ -28,11 +28,14 @@ Ok first thing's first. Open up your terminal and take a look. There should be s
 `Last login: Fri Oct 21 13:32:59 on ttys005
 Karries-MacBook:~ karrie$`
 
-Now we have this black box staring at us, blinking at us and so opens up a world of opportunity and possibilities. 
+THe dollar sign $ is where we're going to input commands.
 
 Well we are now speaking to the operating system but we need to know where we are on that system. 
 
 To do that we are going to use the following command:
-* `pwd` - stands for print working directory. This will tell us where we are within your file system
+* `pwd` - stands for print working directory. This will tell us where we are within the file system
+
+So we know where we're at but what is in the folder?
+* `ls` - is short for list. We are now asking the machine to list all the contents of that directory
 
 ##
