@@ -42,6 +42,17 @@ Our terminal lists lots of files and directories but how do we know which is whi
 
 So I want to see what's in my desktop - to do that I have to navigate into that directory. 
 
+*`cd` - change directory. This command allows us to move into a chosen directory so our command should look like this:
+
+`$ cd Desktop`
+
+Now we are in Desktop and want to look at the work we did today in class. We need to move into the correct folder containing our coursework. 
+
+But are we in the correct place? Check with the pwd command
+
+If we want to move back one folder we can do so easily using `cd ..`
+
+
 
 
 ##
