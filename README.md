@@ -68,7 +68,21 @@ So let's move into that directory.
 
 ##Moving forward##
 
+Let's make a note to ourselves and 
+
 * `touch` - creates a new text file 
+
+*ls -a hidden files
+*ls -l long form file names
+*ls -t file names in the order of transformation date
+
+The cp command copies files or directories. Here, we copy the contents of x.txt into y.txt.
+
+mv superman.txt superhero/
+
+rm --help
+
+
 
 
 
