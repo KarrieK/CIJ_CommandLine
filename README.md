@@ -6,6 +6,13 @@ To do this, we're going to introduce you to the command line and show you how to
 
 The advantage of using the command line is its power. You can run programs, write scripts to automate common tasks, and combine simple commands to handle difficult tasks - making it an important programming tool.
 
+Why the command line?
+* version control - push scripts to your github
+* fast and powerful
+* changes the way you think about computing
+* manage files and folders
+* sanity check your data
+
 ##What is the command line?##
 
 The command line is an interface or interpreter that allows us to instruct the computer by typing commands directly to a computer's operating system. It allows us to navigate folders, called directories in the filesystem and perform tasks without using the mouse.
@@ -33,7 +40,7 @@ Well we are now speaking to the operating system but we need to know where we ar
 To do that we are going to use the following command:
 * `pwd` - stands for print working directory. This will tell us where we are within the file system
 
-The terminal tells me i'm at `/Users/karrie` - this is the root directory. Contained within this directory are smaller directories like Desktop, Downloads etc...
+The terminal tells me i'm at `/Users/karrie` - this is the home directory. Contained within this directory are smaller directories like Desktop, Downloads etc...
 
 So we know where we're at but what is in our root directory?
 * `ls` - is short for list. We are now asking the machine to list all the contents of that directory
@@ -50,7 +57,7 @@ Now we are in Desktop and want to look at the work we did today in class. We nee
 
 But are we in the correct place? Check with the pwd command
 
-If we want to move back one folder we can do so easily using `cd ..`
+If we want to move back one directory we can do so easily using `cd ..` or two directories `cd ../..`
 
 Ok so maybe we want to move some of our files into a new directory. Let's make that new directory first
 
@@ -71,6 +78,13 @@ So let's move into that directory.
 Let's make a note to ourselves and 
 
 * `touch` - creates a new text file 
+* `nano` - lets you edit a text vile
+* cp
+rm
+mv 
+man
+rmdir {folder-name} - removing empty directory
+
 
 *ls -a hidden files
 *ls -l long form file names
@@ -81,6 +95,27 @@ The cp command copies files or directories. Here, we copy the contents of x.txt 
 mv superman.txt superhero/
 
 rm --help
+
+echo "{content}" >: Will write content to a file
+cat: Will preview content in a file
+
+##Where's my stuff?##
+
+There is an amazing find command that will help you find your scripts if you lose them on your file system. 
+* `find {file-name}`
+You can also look for -type and -name
+
+grep "{search-term}"
+http://snugug.github.io/Intro-Command-Line
+
+*csvclean
+*csvstat
+*csvcut -n data.csv
+*csvjoin -c fips data.csv acs2012_5yr_population.csv > joined.csv
+*csvstack
+
+https://github.com/clarkgrubb/data-tools
+
 
 
 
