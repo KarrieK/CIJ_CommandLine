@@ -1,16 +1,13 @@
 #Introduction to the command line#
 
-You have read in files, wrangled data and plotted some graphs in Rstudio but now we're going to teach you how you can leave the Rstudio environment and learn a bit about running scripts in your operating system. 
+You have read in files, wrangled data and plotted some graphs in Rstudio but now we're going to teach you how you can leave the Rstudio environment and learn a bit about how you can harness the mighty power of the command line. 
 
-To do this, we're going to introduce you to the command line and show you how to access, navigate and modify files and folders without using a mouse. 
-
-The advantage of using the command line is its power. You can run programs, write scripts to automate common tasks, and combine simple commands to handle difficult tasks - making it an important programming tool.
-
-Why the command line?
-* version control - push scripts to your github
-* fast and powerful
-* changes the way you think about computing
+##Why the command line?##
 * manage files and folders
+* fast and powerful
+* automate tasks
+* version control - push scripts to your github
+* changes the way you think about computing
 * sanity check your data
 
 ##What is the command line?##
@@ -24,7 +21,11 @@ The bad news is that if you run Microsoft Windows your life is going to be a lot
 
 We interact with the command line from a terminal in Linux or OSX or if you are running a windows machine we're going to use a virtual terminal that we'll run from the browser. First create an account on Python Anywhere. 
 
-In OSX or Linux we're going to need to install iterm, which is just a nice terminal.
+##What do you need?##
+
+* OS X - If you're running OS X then you need to install iterm from the apple store
+* Linux - No need to do anything, terminals are built into the operating system.
+* Windows - You're in a spot of bother, Windows is developer hostile and it's probably best if you just follow along in class
 
 ##Getting started##
 
@@ -42,12 +43,15 @@ To do that we are going to use the following command:
 
 The terminal tells me i'm at `/Users/karrie` - this is the home directory. Contained within this directory are smaller directories like Desktop, Downloads etc...
 
-So we know where we're at but what is in our root directory?
+So we know where we're at but what is in our home directory?
 * `ls` - is short for list. We are now asking the machine to list all the contents of that directory
 
 Our terminal lists lots of files and directories but how do we know which is which? The simple answer is to look for a file extenion. If the name has an extension at all like .py, .R or .csv then it's a file or a script. If there is not extension at all then it is a directory and we can move into it.
 
-So I want to see what's in my desktop - to do that I have to navigate into that directory. 
+* `ls -a` - reveals hidden files so you see the full contents of your directory
+* `ls -t` - sorts files in order of newest first
+
+So I now I know what's in my home directory but I want to move into my desktop so I can se what's in there - to do that I have to navigate into that directory. 
 
 *`cd` - change directory. This command allows us to move into a chosen directory so our command should look like this:
 
@@ -55,7 +59,9 @@ So I want to see what's in my desktop - to do that I have to navigate into that 
 
 Now we are in Desktop and want to look at the work we did today in class. We need to move into the correct folder containing our coursework. 
 
-But are we in the correct place? Check with the pwd command
+But are we in the correct place? Check with the `pwd` command
+
+* `pwd` - stands for print working directory
 
 If we want to move back one directory we can do so easily using `cd ..` or two directories `cd ../..`
 
@@ -65,7 +71,7 @@ Ok so maybe we want to move some of our files into a new directory. Let's make t
 
 Let's create a new directory and call it command_line:
 
-`mkdir command_line`
+`$ mkdir command_line`
 
 What command will tell us if that worked?
 
@@ -75,7 +81,7 @@ So let's move into that directory.
 
 ##Moving forward##
 
-Let's make a note to ourselves and 
+Let's make a note to ourselves and remind us 
 
 * `touch` - creates a new text file 
 * `nano` - lets you edit a text vile
@@ -85,10 +91,6 @@ mv
 man
 rmdir {folder-name} - removing empty directory
 
-
-*ls -a hidden files
-*ls -l long form file names
-*ls -t file names in the order of transformation date
 
 The cp command copies files or directories. Here, we copy the contents of x.txt into y.txt.
 
