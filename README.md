@@ -79,6 +79,7 @@ Let's move into that directory.
 
 ##Moving forward##
 
+We are in our new directory so what now?
 
 * cp
 rm
