@@ -69,22 +69,17 @@ Ok so maybe we want to move some of our files into a new directory. Let's make t
 
 *`mkdir` - make directory. This command makes a new directory in the filesystem at the location you have navigated to
 
-Let's create a new directory and call it command_line:
+Let's create a new directory and call it 'command_line':
 
 `$ mkdir command_line`
 
 What command will tell us if that worked?
 
-'ls' will let us know if we successfully created a new directory. 
-
-So let's move into that directory.
+Let's move into that directory.
 
 ##Moving forward##
 
-Let's make a note to ourselves and remind us 
 
-* `touch` - creates a new text file 
-* `nano` - lets you edit a text vile
 * cp
 rm
 mv 
@@ -117,6 +112,10 @@ http://snugug.github.io/Intro-Command-Line
 *csvstack
 
 https://github.com/clarkgrubb/data-tools
+
+##Other unix commands##
+* `touch` - creates a new text files
+* `nano` - allows you to edit a text file
 
 
 
