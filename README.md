@@ -81,6 +81,26 @@ Let's move into that directory.
 
 We are in our new directory so what now?
 
+Hopefully you grabbed the two files in the repo and they are downloaded onto your machines. Well I think we should take both those files and move them into the our new directory. 
+
+```
+$ cd ../..
+$ pwd
+$ cd Downloads
+$ ls
+```
+See your files? Oh good now let's move them using the `mv` or move command. 
+
+`$ mv NAMES1.csv NAMES2.csv /Users/karrie/Desktop/command_line`
+
+Now take a look, did it work?
+
+Let's read in those files into the termianl to see what's in them. To do that we're going to use `cat`.
+
+So let's try `cat NAMES1.csv`
+
+What have we got?
+
 * cp
 rm
 mv 
