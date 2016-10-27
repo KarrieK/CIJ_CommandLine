@@ -101,21 +101,26 @@ So let's try `cat NAMES1.csv`
 
 What have we got?
 
-* cp
-rm
-mv 
-man
-rmdir {folder-name} - removing empty directory
+##Data wrangling##
+
+Now we can read the contents of the csv in the terminal let's dig a little deeper and get some basic information about our data. 
+
+To do that we're going to use a neat little library call csvkit. Let's grab it and install it quickly
+
+`pip install csvkit`
+
+Let's take a look at our csv again to make sure everything is running smoothly. 
+`$ csvlook NAMES1.csv`
+
+Let's grab some basic stats about our data to make sure that it matches our csv in R. 
+`csvstat NAMES1.csv`
 
 
-The cp command copies files or directories. Here, we copy the contents of x.txt into y.txt.
+csvclean
 
-mv NAMES1.csv command_line/
 
-rm --help
 
 echo "{content}" >: Will write content to a file
-cat: Will preview content in a file
 
 ##Where's my stuff?##
 
@@ -131,6 +136,17 @@ http://snugug.github.io/Intro-Command-Line
 *csvcut -n data.csv
 *csvjoin -c fips data.csv acs2012_5yr_population.csv > joined.csv
 *csvstack
+
+* cp
+rm
+man
+rmdir {folder-name} - removing empty directory
+
+
+The cp command copies files or directories. Here, we copy the contents of x.txt into y.txt.
+
+rm --help
+
 
 https://github.com/clarkgrubb/data-tools
 
