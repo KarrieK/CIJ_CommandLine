@@ -116,11 +116,7 @@ Let's grab some basic stats about our data to make sure that it matches our csv 
 `csvstat NAMES1.csv`
 
 
-csvclean
 
-
-
-echo "{content}" >: Will write content to a file
 
 ##Where's my stuff?##
 
