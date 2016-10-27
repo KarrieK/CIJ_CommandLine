@@ -53,7 +53,7 @@ Our terminal lists lots of files and directories but how do we know which is whi
 
 So I now I know what's in my home directory but I want to move into my desktop so I can se what's in there - to do that I have to navigate into that directory. 
 
-*`cd` - change directory. This command allows us to move into a chosen directory so our command should look like this:
+* `cd` - change directory. This command allows us to move into a chosen directory so our command should look like this:
 
 `$ cd Desktop`
 
@@ -67,7 +67,7 @@ If we want to move back one directory we can do so easily using `cd ..` or two d
 
 Ok so maybe we want to move some of our files into a new directory. Let's make that new directory first
 
-*`mkdir` - make directory. This command makes a new directory in the filesystem at the location you have navigated to
+* `mkdir` - make directory. This command makes a new directory in the filesystem at the location you have navigated to
 
 Let's create a new directory and call it 'command_line':
 
@@ -90,7 +90,7 @@ rmdir {folder-name} - removing empty directory
 
 The cp command copies files or directories. Here, we copy the contents of x.txt into y.txt.
 
-mv superman.txt superhero/
+mv NAMES1.csv command_line/
 
 rm --help
 
@@ -119,6 +119,19 @@ https://github.com/clarkgrubb/data-tools
 * `nano` - allows you to edit a text file
 
 
+##Resources
+
+If you want to dig deeper and get to know csvkit better then check out the great documentation and tutorial on readthedocs. 
+
+* https://csvkit.readthedocs.org/en/0.9.1/tutorial.html
+* https://source.opennews.org/en-US/articles/eleven-awesome-things-you-can-do-csvkit/
+* https://www.techonthenet.com/unix/basic/
+
+
+##Contact me
+
+Email: karrie.anne.kehoe@gmail.com
+Twitter: @karriekehoe
 
 
 
