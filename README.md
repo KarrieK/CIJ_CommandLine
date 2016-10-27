@@ -131,29 +131,22 @@ You can also look for -type and -name
 grep "{search-term}"
 http://snugug.github.io/Intro-Command-Line
 
-*csvclean
-*csvstat
+
 *csvcut -n data.csv
 *csvjoin -c fips data.csv acs2012_5yr_population.csv > joined.csv
 *csvstack
-
-* cp
-rm
-man
-rmdir {folder-name} - removing empty directory
-
-
-The cp command copies files or directories. Here, we copy the contents of x.txt into y.txt.
-
-rm --help
-
+*csvmatch
 
 https://github.com/clarkgrubb/data-tools
 
 ##Other unix commands##
 * `touch` - creates a new text files
 * `nano` - allows you to edit a text file
-
+* `cp` - copies a file or directory
+* `rm` - removes a file or directory
+* `man` - gives you the manual for a command
+* `rmdir {folder-name}` - removes an empty directory
+* `grep` 
 
 ##Resources
 
