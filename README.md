@@ -105,18 +105,31 @@ What have we got?
 
 Now we can read the contents of the csv in the terminal let's dig a little deeper and get some basic information about our data. 
 
-To do that we're going to use a neat little library call csvkit. Let's grab it and install it quickly
+To do that we're going to use a neat little library call csvkit. To install it we need to install the package manager pip
 
-`pip install csvkit`
+To do this we are going to use the pip package manager for python version 2.7
 
-Let's take a look at our csv again to make sure everything is running smoothly. 
+`pip2.7 install --user csvkit`
+
+csvkit has a range of brilliant functions for manipulating and slicing csvs. 
+
+* `in2csv` - converts a file into a csv
+* `csvlook` - gives us a preview of our data
+* `csvcut` - cutting too for manipulating csvs
+* `csvclean` - cleans our csv for errors
+* `csvstat` - gives us descriptive stats for the content of our csv
+* `csvsort` - sorts the contents of a csv file
+* `csvgrep` - regex command like a refined search function in our csv
+* head - limits data to the top ten rows
+
+As our file is already in csv format, we can skip `in2csv` on this occassion so let's jump straight in and look at our data using `csvlook`.
+
 `$ csvlook NAMES1.csv`
 
 Let's grab some basic stats about our data to make sure that it matches our csv in R. 
 `csvstat NAMES1.csv`
 
-
-
+`csvclean` is probably my favourite command - it let's you know if there are any major flaws in your data, such as too many columns.
 
 ##Where's my stuff?##
 
