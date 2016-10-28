@@ -120,7 +120,7 @@ csvkit has a range of brilliant functions for manipulating and slicing csvs.
 * `csvstat` - gives us descriptive stats for the content of our csv
 * `csvsort` - sorts the contents of a csv file
 * `csvgrep` - regex command like a refined search function in our csv
-* head - limits data to the top ten rows
+* `head` - limits data to the top ten rows
 
 As our file is already in csv format, we can skip `in2csv` on this occassion so let's jump straight in and look at our data using `csvlook`.
 
@@ -129,7 +129,14 @@ As our file is already in csv format, we can skip `in2csv` on this occassion so 
 Let's grab some basic stats about our data to make sure that it matches our csv in R. 
 `csvstat NAMES1.csv`
 
-`csvclean` is probably my favourite command - it let's you know if there are any major flaws in your data, such as too many columns.
+`csvclean` is probably my favourite command - it let's you know if there are any major flaws in your data, such as too many columns. Here is an example of the results from some dirty data:
+```
+$ csvclean results.csv
+
+Line 3: Expected 3 columns, found 4 columns
+Line 4: Expected 3 columns, found 2 columns
+```
+
 
 ##Where's my stuff?##
 
