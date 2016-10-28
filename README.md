@@ -124,19 +124,29 @@ csvkit has a range of brilliant functions for manipulating and slicing csvs.
 
 As our file is already in csv format, we can skip `in2csv` on this occassion so let's jump straight in and look at our data using `csvlook`.
 
-`$ csvlook NAMES1.csv`
+`$ csvlook Political_Donations_2014_2016.csv`
 
 Let's grab some basic stats about our data to make sure that it matches our csv in R. 
-`csvstat NAMES1.csv`
+`csvstat Political_Donations_2014_2016.csv`
 
 `csvclean` is probably my favourite command - it let's you know if there are any major flaws in your data, such as too many columns. Here is an example of the results from some dirty data:
 ```
-$ csvclean results.csv
+$ csvclean Political_Donations_2014_2016.csv
 
 Line 3: Expected 3 columns, found 4 columns
 Line 4: Expected 3 columns, found 2 columns
 ```
+We can also quickly look at th column names in our data using `csvcut`. What columns are in our data?
+`$ csvcut -n Political_Donations_2014_2016.csv`
 
+OK we know the names of the columns maybe we want to select just a few and look at them
+`$ csvcut -c 2,4,7 Political_Donations_2014_2016.csv`
+
+That's pretty hard to read so let's use a | to join commands together 
+
+`$ csvcut -c 2,4,7 Political_Donations_2014_2016.csv | csvlook`
+
+Our data is much easier to read now and we're seeing the columns we want so let's 
 
 ##Where's my stuff?##
 
