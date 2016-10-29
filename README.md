@@ -12,15 +12,16 @@ You have read in files, wrangled data and plotted some graphs in Rstudio but now
 
 ##What is the command line?##
 
-The command line is an interface or interpreter that allows us to instruct the computer by typing commands directly to a computer's operating system. It allows us to navigate folders, called directories in the filesystem and perform tasks without using the mouse.
+The command line is an interface to the computer which allows us to instruct the computer by typing commands directly to an interpreter. It allows us to navigate around in the filesystem and perform tasks without using the mouse.
 
-If you run OSx or a Linux based operating system then you are in luck, the command line is going to be your best friend. 
-The bad news is that if you run Microsoft Windows your life is going to be a lot tougher. 
+If you run OS X or a Linux operating system then you are in luck, the unix command line is going to be your best friend. 
+The bad news is that if you run Microsoft Windows your life is going to be a lot tougher, as the DOS command line is not as helpful or powerful.
+
 ##What do you need?##
 
-* OS X - If you're running OS X then you need to install iterm from the apple store
+* OS X - If you're running OS X then you need to install iterm from the app store
 * Linux - No need to do anything, terminals are built into the operating system.
-* Windows - Windows is a tough environment to use unix commands in. You need Cygwin ('https://www.cygwin.com/cygwin-ug-net/cygwin-ug-net.html') or Powershell ('https://msdn.microsoft.com/en-us/powershell/mt173057.aspx') to be able to interact with it. 
+* Windows - has a built-in shell, called Command Prompt, which emulates their older operating system, DOS. It’s not very powerful, and so not very useful. For a Unix-like environment, you can install 
 
 ##Getting started##
 
@@ -36,17 +37,17 @@ Well we are now speaking to the operating system but we need to know where we ar
 To do that we are going to use the following command:
 * `pwd` - stands for print working directory. This will tell us where we are within the file system
 
-The terminal tells me i'm at `/Users/karrie` - this is the home directory. Contained within this directory are smaller directories like Desktop, Downloads etc...
+The terminal tells me i'm at `/Users/karrie` - this is the home directory. Contained within this directory are deeper directories like Desktop, Downloads etc...
 
-So we know where we're at but what is in our home directory?
+So we know where we are at but what is in our home directory?
 * `ls` - is short for list. We are now asking the machine to list all the contents of that directory
 
-Our terminal lists lots of files and directories but how do we know which is which? The simple answer is to look for a file extenion. If the name has an extension at all like .py, .R or .csv then it's a file or a script. If there is not extension at all then it is a directory and we can move into it.
+Our terminal lists lots of files and directories but how do we know which is which? The simple answer is to look for a file extension. If the name has an extension at all like .py, .R or .csv.
 
 * `ls -a` - reveals hidden files so you see the full contents of your directory
 * `ls -t` - sorts files in order of newest first
 
-So I now I know what's in my home directory but I want to move into my desktop so I can se what's in there - to do that I have to navigate into that directory. 
+So I now I know what's in my home directory but I want to move into my desktop so I can see what's in there - to do that I have to navigate into that directory. 
 
 * `cd` - change directory. This command allows us to move into a chosen directory so our command should look like this:
 
@@ -58,15 +59,15 @@ But are we in the correct place? Check with the `pwd` command
 
 * `pwd` - stands for print working directory
 
-If we want to move back one directory we can do so easily using `cd ..` or two directories `cd ../..`
+If we want to move back one directory we can do so easily using `cd ..` or two directories `cd ../..` or Or `cd ~` to return to the home directory
 
 Ok so maybe we want to move some of our files into a new directory. Let's make that new directory first
 
 * `mkdir` - make directory. This command makes a new directory in the filesystem at the location you have navigated to
 
-Let's create a new directory and call it 'command_line':
+Let's create a new directory and call it 'CIJ_Data':
 
-`$ mkdir command_line`
+`$ mkdir CIJ_Data`
 
 What command will tell us if that worked?
 
@@ -86,11 +87,11 @@ $ ls
 ```
 See your files? Oh good now let's move them using the `mv` or move command. 
 
-`$ mv NAMES1.csv NAMES2.csv /Users/karrie/Desktop/command_line`
+`$ mv NAMES1.csv NAMES2.csv ~/Desktop/command_line`
 
 Now take a look, did it work?
 
-Let's read in those files into the termianl to see what's in them. To do that we're going to use `cat`.
+Let's read in those files into the terminal to see what's in them. To do that we're going to use `cat`.
 
 So let's try `cat NAMES1.csv`
 
