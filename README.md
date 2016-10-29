@@ -105,14 +105,17 @@ We are going to use the python library csvmatch to hunt for results.
 
 To install type `pip install csvmatch` and wait. 
 
-Let's practice on NAMES1.csv and NAMES2.csv and see if there are any exact matches in there:
+Let's grab our two files HonoursLists2015_2016.csv and Political_Donations_2014_2016.csv and see if there are any exact matches in there:
 
-`$ csvmatch NAMES1.csv NAMES2.csv`
+`$ csvmatch HonoursLists2015_2016.csv Political_Donations_2014_2016.csv`
 
-We can output the results to a new easily too
+So there is too much data there for the terminal to handle so we need to specify which columns. 
 
-`$ csvmatch NAMES1.csv NAMES2.csv > results.csv`
+`$ csvmatch csvmatch Political_Donations_2014_2016.csv HonoursLists2015_2016.csv --fields1 DonorName --fields2 Name`
 
+Hmm let's try to fuzzy match that and output the results to csv
+
+`$ csvmatch Political_Donations_2014_2016.csv HonoursLists2015_2016.csv --fields1 DonorName --fields2 Name --fuzzy > results1.csv`
 
 ##Other unix commands##
 * `touch` - creates a new text files
@@ -126,17 +129,14 @@ We can output the results to a new easily too
 ##Resources
 
 If you want to dig deeper and explore the awesome world of command line tools then here are a couple of links to get you started. 
-
-* https://www.techonthenet.com/unix/basic/
-* https://github.com/clarkgrubb/data-tools
-
+* csvmatch docs - https://github.com/maxharlow/csvmatch
+* More unix commands - https://www.techonthenet.com/unix/basic/
+* Data tools - https://github.com/clarkgrubb/data-tools
 
 ##Contact me
 
 Email: karrie.anne.kehoe@gmail.com
 Twitter: @karriekehoe
-
-
 
 
 ##
