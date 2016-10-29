@@ -1,31 +1,26 @@
 #Introduction to the command line#
 
-You have read in files, wrangled data and plotted some graphs in Rstudio but now we're going to teach you how you can leave the Rstudio environment and learn a bit about how you can harness the mighty power of the command line. 
+You have read in files, wrangled data and plotted some graphs in Rstudio but now we're going to teach you how you can leave the Rstudio environment and harness the mighty power of the command line. 
 
 ##Why the command line?##
 * manage files and folders
+* sanity check your data
 * fast and powerful
 * automate tasks
 * version control - push scripts to your github
 * changes the way you think about computing
-* sanity check your data
 
 ##What is the command line?##
 
 The command line is an interface or interpreter that allows us to instruct the computer by typing commands directly to a computer's operating system. It allows us to navigate folders, called directories in the filesystem and perform tasks without using the mouse.
 
 If you run OSx or a Linux based operating system then you are in luck, the command line is going to be your best friend. 
-The bad news is that if you run Microsoft Windows your life is going to be a lot tougher. Windows is hostile to developers and not a comfortable environment to code in. 
-
-##How do we access the command line?##
-
-We interact with the command line from a terminal in Linux or OSX or if you are running a windows machine we're going to use a virtual terminal that we'll run from the browser. First create an account on Python Anywhere. 
-
+The bad news is that if you run Microsoft Windows your life is going to be a lot tougher. 
 ##What do you need?##
 
 * OS X - If you're running OS X then you need to install iterm from the apple store
 * Linux - No need to do anything, terminals are built into the operating system.
-* Windows - You're in a spot of bother, Windows is developer hostile and it's probably best if you just follow along in class
+* Windows - Windows is a tough environment to use unix commands in. You need Cygwin ('https://www.cygwin.com/cygwin-ug-net/cygwin-ug-net.html') or Powershell ('https://msdn.microsoft.com/en-us/powershell/mt173057.aspx') to be able to interact with it. 
 
 ##Getting started##
 
@@ -101,69 +96,22 @@ So let's try `cat NAMES1.csv`
 
 What have we got?
 
-##Data wrangling##
+##Matching csvs##
 
-Now we can read the contents of the csv in the terminal let's dig a little deeper and get some basic information about our data. 
+Comparing csvs and searching for matches is really powerful and can lead to some great leads to follow. However be **extremely careful** false positives are very real and are a recipe for libel if results are not thoroughly check and validated. 
 
-To do that we're going to use a neat little library call csvkit. To install it we need to install the package manager pip
+We are going to use the python library csvmatch to hunt for results. 
 
-To do this we are going to use the pip package manager for python version 2.7
+To install type `pip install csvmatch` and wait. 
 
-`pip2.7 install --user csvkit`
+Let's practice on NAMES1.csv and NAMES2.csv and see if there are any exact matches in there:
 
-csvkit has a range of brilliant functions for manipulating and slicing csvs. 
+`$ csvmatch NAMES1.csv NAMES2.csv`
 
-* `in2csv` - converts a file into a csv
-* `csvlook` - gives us a preview of our data
-* `csvcut` - cutting too for manipulating csvs
-* `csvclean` - cleans our csv for errors
-* `csvstat` - gives us descriptive stats for the content of our csv
-* `csvsort` - sorts the contents of a csv file
-* `csvgrep` - regex command like a refined search function in our csv
-* `head` - limits data to the top ten rows
+We can output the results to a new easily too
 
-As our file is already in csv format, we can skip `in2csv` on this occassion so let's jump straight in and look at our data using `csvlook`.
+`$ csvmatch NAMES1.csv NAMES2.csv > results.csv`
 
-`$ csvlook Political_Donations_2014_2016.csv`
-
-Let's grab some basic stats about our data to make sure that it matches our csv in R. 
-`csvstat Political_Donations_2014_2016.csv`
-
-`csvclean` is probably my favourite command - it let's you know if there are any major flaws in your data, such as too many columns. Here is an example of the results from some dirty data:
-```
-$ csvclean Political_Donations_2014_2016.csv
-
-Line 3: Expected 3 columns, found 4 columns
-Line 4: Expected 3 columns, found 2 columns
-```
-We can also quickly look at th column names in our data using `csvcut`. What columns are in our data?
-`$ csvcut -n Political_Donations_2014_2016.csv`
-
-OK we know the names of the columns maybe we want to select just a few and look at them
-`$ csvcut -c 2,4,7 Political_Donations_2014_2016.csv`
-
-That's pretty hard to read so let's use a | to join commands together 
-
-`$ csvcut -c 2,4,7 Political_Donations_2014_2016.csv | csvlook`
-
-Our data is much easier to read now and we're seeing the columns we want so let's 
-
-##Where's my stuff?##
-
-There is an amazing find command that will help you find your scripts if you lose them on your file system. 
-* `find {file-name}`
-You can also look for -type and -name
-
-grep "{search-term}"
-http://snugug.github.io/Intro-Command-Line
-
-
-*csvcut -n data.csv
-*csvjoin -c fips data.csv acs2012_5yr_population.csv > joined.csv
-*csvstack
-*csvmatch
-
-https://github.com/clarkgrubb/data-tools
 
 ##Other unix commands##
 * `touch` - creates a new text files
@@ -171,16 +119,15 @@ https://github.com/clarkgrubb/data-tools
 * `cp` - copies a file or directory
 * `rm` - removes a file or directory
 * `man` - gives you the manual for a command
-* `rmdir {folder-name}` - removes an empty directory
-* `grep` 
+* `rmdir` - removes an empty directory
+* `grep` - general regular expression (like in R)
 
 ##Resources
 
-If you want to dig deeper and get to know csvkit better then check out the great documentation and tutorial on readthedocs. 
+If you want to dig deeper and explore the awesome world of command line tools then here are a couple of links to get you started. 
 
-* https://csvkit.readthedocs.org/en/0.9.1/tutorial.html
-* https://source.opennews.org/en-US/articles/eleven-awesome-things-you-can-do-csvkit/
 * https://www.techonthenet.com/unix/basic/
+* https://github.com/clarkgrubb/data-tools
 
 
 ##Contact me
