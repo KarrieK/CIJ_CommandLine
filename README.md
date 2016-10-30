@@ -93,7 +93,7 @@ Now take a look, did it work?
 
 Let's read in those files into the terminal to see what's in them. To do that we're going to use `cat`.
 
-So let's try `cat NAMES1.csv`
+So let's try `cat HonoursLists2015_2016.csv`
 
 What have we got?
 
