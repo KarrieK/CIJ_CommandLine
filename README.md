@@ -97,6 +97,15 @@ So let's try `cat HonoursLists2015_2016.csv`
 
 What have we got?
 
+##Other unix commands##
+* `touch` - creates a new text files
+* `nano` - allows you to edit a text file
+* `cp` - copies a file or directory
+* `rm` - removes a file or directory
+* `man` - gives you the manual for a command
+* `rmdir` - removes an empty directory
+* `grep` - general regular expression (like in R)
+
 ##Matching csvs##
 
 Comparing csvs and searching for matches is really powerful and can lead to some great leads to follow. However be **extremely careful** false positives are very real and are a recipe for libel if results are not thoroughly check and validated. 
@@ -118,15 +127,6 @@ So there is too much data there for the terminal to handle so we need to specify
 Hmm let's try to fuzzy match that and output the results to csv
 
 `$ csvmatch Political_Donations_2014_2016.csv HonoursLists2015_2016.csv --fields1 DonorName --fields2 Name --fuzzy > results1.csv`
-
-##Other unix commands##
-* `touch` - creates a new text files
-* `nano` - allows you to edit a text file
-* `cp` - copies a file or directory
-* `rm` - removes a file or directory
-* `man` - gives you the manual for a command
-* `rmdir` - removes an empty directory
-* `grep` - general regular expression (like in R)
 
 ##Resources
 
