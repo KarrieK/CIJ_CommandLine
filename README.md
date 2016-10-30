@@ -122,7 +122,7 @@ Let's grab our two files HonoursLists2015_2016.csv and Political_Donations_2014_
 
 So there is too much data there for the terminal to handle so we need to specify which columns. 
 
-`$ csvmatch csvmatch Political_Donations_2014_2016.csv HonoursLists2015_2016.csv --fields1 DonorName --fields2 Name`
+`$ csvmatch Political_Donations_2014_2016.csv HonoursLists2015_2016.csv --fields1 DonorName --fields2 Name`
 
 Hmm let's try to fuzzy match that and output the results to csv
 
