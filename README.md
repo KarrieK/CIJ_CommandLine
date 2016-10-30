@@ -87,7 +87,7 @@ $ ls
 ```
 See your files? Oh good now let's move them using the `mv` or move command. 
 
-`$ mv NAMES1.csv NAMES2.csv ~/Desktop/command_line`
+`$ mv NAMES1.csv ~/Desktop/command_line`
 
 Now take a look, did it work?
 
@@ -101,7 +101,9 @@ What have we got?
 
 Comparing csvs and searching for matches is really powerful and can lead to some great leads to follow. However be **extremely careful** false positives are very real and are a recipe for libel if results are not thoroughly check and validated. 
 
-We are going to use the python library csvmatch to hunt for results. 
+We are going to use the python library csvmatch to hunt for results. But we need to install pip a package manager and then the library csvmatch.
+
+Let's grab pip `$ sudo easy_install pip` 
 
 To install type `pip install csvmatch` and wait. 
 
