@@ -87,7 +87,7 @@ $ ls
 ```
 See your files? Oh good now let's move them using the `mv` or move command. 
 
-`$ mv NAMES1.csv ~/Desktop/command_line`
+`$ mv (FOLDER NAME) ~/Desktop/command_line`
 
 Now take a look, did it work?
 
